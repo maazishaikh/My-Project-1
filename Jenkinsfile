@@ -3,14 +3,14 @@ pipeline {
 
     environment {
         AWS_REGION = "ap-south-1"  // change to your AWS region
-        ECR_REPO = "your-account-id.dkr.ecr.ap-south-1.amazonaws.com/your-repo-name"
+        ECR_REPO = "972583819253.dkr.ecr.ap-south-1.amazonaws.com/my-project-1"
         IMAGE_TAG = "latest"
     }
 
     stages {
         stage('Checkout from GitHub') {
             steps {
-                git branch: 'main', url: 'https://github.com/your-username/your-repo.git'
+                git branch: 'master', url: 'https://github.com/maazishaikh/My-Project-1'
             }
         }
 
